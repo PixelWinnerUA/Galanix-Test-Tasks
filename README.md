@@ -5,9 +5,8 @@ In this repository you can see how I did the tests for Galanix IT.
 * The result of the work is in the "Solutions" folder.
 * Tasks and material for work are in the "Task" folder.
 * Project Task 1 and Task 2 do not require assembly.
-* To open a Task 3 project in the browser, you can use the ready-made "build" in the appropriate folder, or by executing
-  command ```npm start```, 
-having previously installed all necessary dependencies with the help of ```npm install```.
+* To open a Task 3 project in the browser, you can use the ready-made "build" in the appropriate folder,  or by executing
+  command ```npm start```, having previously installed all necessary dependencies with the help of ```npm install```.
 
 ## Demo links
 
