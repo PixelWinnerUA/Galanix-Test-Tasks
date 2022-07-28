@@ -1,7 +1,5 @@
 # Galanix-Test-Tasks
 
---
-
 In this repository you can see how I did the tests for Galanix IT.
 
 * The result of the work is in the "Solutions" folder.
@@ -12,8 +10,6 @@ In this repository you can see how I did the tests for Galanix IT.
 * ```npm start```, having previously installed all necessary dependencies with the help of ```npm install```.
 
 ## Demo links
-
---
 
 * Task1: http://galanix-task-1.atwebpages.com/
 * Task2: http://galanix-task-2.atwebpages.com/
