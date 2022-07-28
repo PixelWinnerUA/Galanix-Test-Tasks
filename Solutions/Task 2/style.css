@@ -1,0 +1,149 @@
+/* Zeroing body styles */
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Zeroing body wrapper styles */
+.body-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Body toggle classes */
+body.active {
+    overflow: hidden;
+}
+
+/* Block for start info from "script.js" */
+.start-info {
+    text-align: center;
+}
+
+/* Pop-Up block */
+.full-image-background.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Pop-Up block */
+.full-image-background {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: brightness(40%);
+    display: none;
+}
+
+/* Pop-Up block */
+.full-image-background>img {
+    z-index: 101;
+    width: auto;
+    height: auto;
+    max-height: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+}
+
+/* Pop-Up block */
+.full-image-background>div {
+    z-index: 101;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: min-content;
+    height: min-content;
+    cursor: pointer;
+}
+
+/* Gallery Content */
+.gallery-wrapper {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+/* Gallery Image */
+.item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+/* Gallery Image */
+.item-img>img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    border: 5px darkgrey solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* Gallery Image */
+.item-img>img:hover {
+    border-color: yellow !important;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Button delete */
+.item-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Button delete */
+.item-delete>img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+/* Button delete */
+.deleted-gallery-item {
+    display: none;
+}
+
+/* Button reset */
+#reset {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    background: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto;
+    height: min-content;
+    cursor: pointer;
+}

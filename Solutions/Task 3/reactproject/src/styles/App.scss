@@ -1,0 +1,121 @@
+.App {
+  .Search-Tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .Search-Tools-Buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+  }
+
+  .Universities {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    .MuiCircularProgress-root {
+      margin: auto;
+    }
+
+    .Universities-List {
+      max-width: 1200px;
+      margin: auto;
+
+
+      th {
+        font-size: 16px;
+        font-weight: bold;
+        background: #b9c9fe;
+        border-top: 4px solid #aabcfe;
+        border-bottom: 1px solid white;
+        color: #039;
+        padding: 8px;
+      }
+
+      td {
+        background: #e8edff;
+        border-bottom: 1px solid white;
+        color: #669;
+        border-top: 1px solid transparent;
+        padding: 8px;
+      }
+
+      tr:hover td {
+        background: #ccddff;
+      }
+
+      .Country-Code {
+        text-align: center;
+      }
+    }
+
+    .Universities-List .Numeration {
+      counter-reset: rowNumber;
+    }
+
+    .Universities-List tr {
+      counter-increment: rowNumber;
+    }
+
+    .Universities-List tr td:first-child::before {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: counter(rowNumber);
+    }
+  }
+
+  .FavoriteList {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(40%);
+    gap: 20px;
+
+    .FavoriteList-Scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      background: white;
+      max-height: 80%;
+      overflow: auto;
+      min-width: 300px;
+    }
+
+    .Empty-list {
+      border: 1px solid black;
+      border-radius: 5px;
+      background: white;
+      padding: 20px;
+      color: black;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+
+}
+
